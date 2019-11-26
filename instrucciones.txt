@@ -1,0 +1,31 @@
+Resultados:
+
+- Reproducción de sonido al momento de:
+	.Realizar un rebote.
+	.Perder un punto.
+	.Perder el juego definitivo.
+
+- El aumento de velocidad al chocar con las barras y retorna a su velocidad inicial que es 3 al momento de perder un punto. 
+	
+Instrucciones:
+
+1. Primero en una terminal dirigirse a la carpeta server y ejecutar el comando:
+
+- none index.js
+
+Para habilitar la reproducción de los sonidos.
+
+2. Luego en otra terminal sin cerrar la anterior en la misma carpeta principal "pingpong",
+ejecutar el comando:
+
+- npm install
+
+Para instalar las dependencias.
+
+Y luego ejecutar el comando:
+
+- npm start
+
+Para inicializar la aplicacion.
+
+Por defecto se ejecutara en el puerto 3000 del localhost.

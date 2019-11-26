@@ -34,15 +34,32 @@ before(advised, "add").add(adviser, "override");
 class App extends React.Component{
 
 
-
+  constructor (props ){
+    super(props)
+    this.state={
+      rest : false
+    }
+  }
+  boton(){
+    if (!this.state.rest)
+      return "iniciar "
+    else
+      return "quitar"
+  }
 
 
   render(){
     //advised.add(2);  // Should equal 4.  
     //console.log(advised)
 
-    return(<div>
-      <AppP5></AppP5>
+    return(<div className = {"aller"}   >
+      <button className ={ "quitarB"} onClick = {()=>this.setState({rest:!this.state.rest})}  >
+        {this.boton()}
+      </button>
+      <div id="sketch-holder"  className= {"sk"}>
+      <AppP5 className = {"aller"}  value={this.state.rest} ></AppP5>
+      </div>
+      
     </div>)
   }
 }
